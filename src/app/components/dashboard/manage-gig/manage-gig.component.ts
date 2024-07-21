@@ -112,6 +112,6 @@ export class ManageGigComponent implements OnInit {
   }
 
 
-  
+//dsfdsdsf
 
 }
