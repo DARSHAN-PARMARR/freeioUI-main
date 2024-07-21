@@ -1,0 +1,88 @@
+<div class="dashboard__content hover-bgc-color">
+  <div class="row pb40">
+    <div class="col-lg-9">
+      <div class="dashboard_title_area">
+        <h2>Add Services</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="text-lg-end">
+        <button (click)="onSubmit()"  class="ud-btn btn-dark">Save & Publish<i class="fal fa-arrow-right-long"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="ps-widget bgc-white bdrs4 p30 mb30 overflow-hidden position-relative">
+        <div class="bdrb1 pb15 mb25">
+          <h5 class="list-title">Basic Information</h5>
+        </div>
+        <div class="col-xl-8">
+          <form [formGroup]="gigForm" (ngSubmit)="onSubmit()" class="form-style1">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="mb20">
+                  <label class="heading-color ff-heading fw500 mb10">Service Title</label>
+                  <input formControlName="title" type="text" class="form-control" placeholder="I will" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="mb20">
+                  <label class="heading-color ff-heading fw500 mb10">Price</label>
+                  <input formControlName="pricing" type="number" class="form-control" placeholder="$10" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="mb20">
+                  <label class="heading-color ff-heading fw500 mb10">Service Type</label>
+                  <div class="bootselect-multiselect">
+                    <select formControlName="serviceType" class="form-control">
+                      <option value="">Select Service Type</option>
+                      <option value="Graphics & Design">Graphics & Design</option>
+                      <option value="Digital Marketing">Digital Marketing</option>
+                      <option value="Writing & Translation">Writing & Translation</option>
+                      <option value="Video & Animation">Video & Animation</option>
+                      <option value="Music & Audio">Music & Audio</option>
+                      <option value="Programming & Tech">Programming & Tech</option>
+                      <option value="Business">Business</option>
+                      <option value="Lifestyle">Lifestyle</option>
+                      <option value="Trending">Trending</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-sm-6">
+                <div class="mb20">
+                  <label class="heading-color ff-heading fw500 mb10">Service Name</label>
+                  <input formControlName="serviceName" type="text" class="form-control" placeholder="Name Your Service" />
+                </div>
+              </div>
+             
+              <div class="col-md-12">
+                <div class="mb10">
+                  <label class="heading-color ff-heading fw500 mb10">Services Detail</label>
+                  <textarea formControlName="description" cols="30" rows="6" placeholder="Description"></textarea>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="mb20">
+                  <label class="heading-color ff-heading fw500 mb10">Upload Images</label>
+                  <input type="file" multiple (change)="onImageSelected($event)" />
+                </div>
+              </div>
+              
+              <div class="col-md-12">
+                <div class="text-start">
+                  <button  type="submit" class="ud-btn btn-thm">Save<i class="fal fa-arrow-right-long"></i></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

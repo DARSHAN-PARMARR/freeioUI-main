@@ -1,0 +1,43 @@
+<h2 mat-dialog-title class="dialog-title">
+  Log In
+  <button mat-icon-button class="close-button" (click)="onNoClick()">
+    <mat-icon>close</mat-icon>
+  </button>
+</h2>
+<p class="text dialog-subtitle">Don't have an account? <a (click)="openRegisterDialog()" class="text-thm">Sign Up!</a></p>
+<form [formGroup]="loginForm">
+  <div mat-dialog-content>
+    <div class="mb20">
+      <label class="form-label fw600 dark-color">Email</label>
+      <input type="email" formControlName="email" class="form-control"  placeholder="alitfn58@gmail.com">
+    </div>
+    <div class="mb15">
+      <label class="form-label fw600 dark-color">Password</label>
+      <input type="password" formControlName="password" class="form-control"  placeholder="*******">
+  
+    </div>
+    <div class="checkbox-style1 d-block d-sm-flex align-items-center justify-content-between mb20">
+      <label class="custom_checkbox fz14 ff-heading">Remember me
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <a class="fz14 ff-heading" href="#">Lost your password?</a>
+    </div>
+    <div class="d-grid mb20">
+      <button class="ud-btn btn-thm" type="button" (click)="onLogin()" >Log In <i class="fal fa-arrow-right-long"></i></button>
+    </div>
+    <div class="hr_content mb20">
+      <hr>
+      <span class="hr_top_text">OR</span>
+    </div>
+    <div class="d-md-flex justify-content-between">
+      <button class="ud-btn btn-fb fz14 fw400 mb-2 mb-md-0" type="button"><i class="fab fa-facebook-f pr10"></i> Continue Facebook</button>
+      <button class="ud-btn btn-google fz14 fw400 mb-2 mb-md-0" type="button"><i class="fab fa-google"></i> Continue Google</button>
+      <button class="ud-btn btn-apple fz14 fw400" type="button"><i class="fab fa-apple"></i> Continue Apple</button>
+    </div>
+  </div>
+</form>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+</div>

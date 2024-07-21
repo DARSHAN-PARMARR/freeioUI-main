@@ -1,0 +1,12 @@
+#dynamic-color {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+#dynamic-color.scrolled {
+    color: #000000;
+}
+.dashboard-dropdown-item {
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  

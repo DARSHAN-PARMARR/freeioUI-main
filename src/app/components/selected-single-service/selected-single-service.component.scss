@@ -1,0 +1,32 @@
+.service-sidebar {
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .radio-group label {
+    margin-right: 10px;
+  }
+  
+  .hourly-input, .daily-input {
+    margin-top: 15px;
+  }
+  
+  .ud-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  .carousel-item img{
+    height: 640px;
+  }
+  .review-color {
+    color: #d3d3d3; /* Light gray for unselected stars */
+    cursor: pointer;
+  }
+  
+  .review-color.selected {
+    color: #ffcc00; /* Yellow for selected stars */
+  }
+  

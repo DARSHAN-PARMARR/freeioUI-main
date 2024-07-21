@@ -1,0 +1,26 @@
+.input-group {
+    position: relative;
+  }
+  
+  .input-group-text {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+    color: #0d638f;
+  }
+  
+  .form-control[readonly] {
+    background-color: #f1f1f1;
+    cursor: default;
+  }
+  
+  .form-control {
+    padding-right: 2em; // Adjust padding to make space for the icon
+  }
+  
